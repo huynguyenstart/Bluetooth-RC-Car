@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/car_wheel"
+            android:src="@mipmap/rcwheel"
+            />
+        <GridLayout
+            android:layout_gravity="fill_horizontal|bottom"
+            android:columnCount="3">
+
+            <ImageView
+                android:layout_columnSpan="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/close"
+                android:src="@mipmap/viewfinder" />
+
+            <Button
+                android:id="@+id/connect"
+                android:text="Scan"/>
+            <com.example.pc.rccar.MySpinner
+                android:layout_width="600px"
+                android:layout_height="150px"
+                android:spinnerMode="dropdown"
+                android:id="@+id/listDevice">
+
+            </com.example.pc.rccar.MySpinner>
+            <Button
+                android:id="@+id/disconnect"
+                android:text="Conn"/>
+
+        </GridLayout>
+
+        <GridLayout
+            android:columnCount="2">
+
+            <TextView android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/car_toward"
+                android:src="@mipmap/pedal1"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/car_fordward"
+                android:src="@mipmap/pedal1"
+                />
+        </GridLayout>
+
+    </GridLayout>
+
+
+</LinearLayout>
